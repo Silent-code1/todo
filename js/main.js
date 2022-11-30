@@ -33,12 +33,6 @@ function addTask(event) {
 
   // додаємо задачу в масив задач
   tasks.push(newTask);
-	
-	taskInput.oninput = () => {
-    if (taskInput.value.charAt(0) === ' ') {
-        taskInput.value = "'';
-    }
-}
 
   saveToLocalStorage();
 
